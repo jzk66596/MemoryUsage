@@ -10,7 +10,7 @@ int main() {
   struct timeval start, end;
   gettimeofday(&start, NULL);
   long starttime = start.tv_sec * 1000000 + start.tv_usec;
-  for (int i = 0; i < 2; ++i) {
+  for (int i = 0; i < 4; ++i) {
     for (int j = 0; j < 100000000; ++j) {
       vec.push_back(j);
     }
